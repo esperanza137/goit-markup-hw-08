@@ -81,7 +81,7 @@ ul {
   text-decoration-color: var(--selection-color);
 }
 
-.header__nav-section {
+.header__nav--section {
   display: flex;
   justify-content: space-between;
   font-weight: 500;
@@ -506,6 +506,7 @@ ul.bottom-mail-tel {
 }
 
 .signup__title {
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14px;
   letter-spacing: 0.03em;
@@ -521,11 +522,12 @@ ul.bottom-mail-tel {
 
 .input-email {
   margin-top: 20px;
+  margin-right: 11px;
   background-color: var(--secondary-bacground-color);
-  width: 358px;
+  width: 356px;
   height: 50px;
   font-size: 16px;
-  color: var(--white-color);
+  color:  rgba(255, 255, 255, 0.6);
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -536,7 +538,7 @@ ul.bottom-mail-tel {
 
 .submit-btn {
   position: relative;
-  padding: 10px 62px 10px 29px;
+  padding: 8px 72px 8px 42px;
   
   color: var(--white-color);
   font-size: 16px;
@@ -548,7 +550,6 @@ ul.bottom-mail-tel {
   background-color: var(--selection-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  width: 200px;
 
   border-color: var(--selection-color);
   border: 1px solid var(--selection-color);
@@ -691,33 +692,49 @@ img {
 
 .backdroop {
   position: fixed;
-  left: 0;
+  display: flex;
+  /* left: 0;
   right: 0;
+  top: 0;
+  bottom: 0; */
+  inset: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
   transition: opacity .25s cubic-bezier(0.4,0,0.2,1);
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.is-hidden {
+  /* transform: translateX(-100%); */
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
 
+/* .modal .is-hidden {
+  transform: scale(0);
+  transition: transform 0.2s;
+  transition-timing-function: ease-out;
+} */
+
+.modal {
+  position: relative;
+  
   width: 528px;
   min-height: 581px;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 40px;
-  z-index: 1;
+  z-index: 10;
   background-color: var(--white-color);
   
   animation-name: modalBox;
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translate(-50%, -50%) scale(1) ;
+  /* transform: translate(-50%, -50%) scale(1) ; */
 }
 
 .modal-title {
@@ -736,7 +753,8 @@ img {
   margin-bottom: 10px;
 }
 
-.modal-label:focus-within, .modal-icon svg,
+.modal-label:focus-within,
+.modal-icon svg,
 .modal-label:hover svg{
   fill: var(--selection-color);
   stroke: var(--selection-color);
@@ -776,7 +794,6 @@ img {
   padding: 12px 45px;
 
   position: relative;
-  /* padding: 11px 12px; */
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   cursor: text;
@@ -785,14 +802,17 @@ img {
 .modal-inputs:focus svg,
 .modal-inputs:hover svg,
 .modal-inputs:focus,
-.modal-inputs:hover {
+.modal-inputs:hover,
+.modal-textarea:hover,
+.modal-textarea:focus {
   border-color: var(--selection-color);
   fill: var(--selection-color);
+  outline: none;
 }
-.modal-inputs:focus-within svg {
+/* .modal-inputs:focus-within svg {
   border-color: var(--selection-color);
   fill: var(--selection-color);
-}
+} */
 
 .modal-textarea {
   display: block;
@@ -805,12 +825,15 @@ img {
   letter-spacing: 0.01em;
   padding-inline: 16px;
   padding-top: 12px;
-  color: rgba(117, 117, 117, 0.5);
+  color: var(--font-color);
 
   cursor: text;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   resize: none;
+}
+.modal-textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .checkbox-group {
@@ -830,11 +853,11 @@ img {
 
 .close-btn {
   position: absolute;
+  display: flex;
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
-  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -883,7 +906,7 @@ img {
   text-decoration: underline;
 }
 
-.submit-nwsltr-btn {
+.submit-modal-btn {
   background-color: var(--selection-color);
   width: 200px;
   padding: 10px 76px;
@@ -901,19 +924,6 @@ img {
   border: var(--selection-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-}
-
-.is-hidden {
-  pointer-events: none;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.modal .is-hidden {
-  
-  transform: scale(0);
-  transition: transform 0.2s;
-  transition-timing-function: ease-out;
 }
 
 /* 
