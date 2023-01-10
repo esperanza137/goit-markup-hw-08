@@ -252,7 +252,7 @@ ul {
 }
 /* ======== What do we do? ================== */
 
-.secondary__section {
+.second__heading {
   display: flex;
   font-size: 36px;
   line-height: 1.16;
@@ -377,17 +377,17 @@ a.social__list--link:focus svg {
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-clients-section {
+.clients__section {
   background-color: var(--white-color);
   padding-bottom: 94px;
 }
-.our-clients {
+.clients__section--list {
   display: flex;
   list-style: none;
   justify-content: space-around;
 }
 
-.our-clients-icon {
+.clients__section--icon {
   display: flex;
   width: 170px;
   fill: var(--icon-color);
@@ -398,14 +398,14 @@ a.social__list--link:focus svg {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-clients-icon:hover,
-.our-clients-icon:focus {
+.clients__section--icon:hover,
+.clients__section--icon:focus {
   border-color: var(--selection-color);
   cursor: pointer;
 }
 
-.our-clients-icon:hover svg,
-.our-clients-icon:focus svg {
+.clients__section--icon:hover svg,
+.clients__section--icon:focus svg {
   fill: var(--selection-color);
 }
 
