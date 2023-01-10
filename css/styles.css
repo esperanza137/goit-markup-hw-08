@@ -72,7 +72,7 @@ ul {
 .logo__part {
   color: var(--selection-color);
 }
-.logo-studio {
+.logo__studio {
   color: var(--white-color);
 }
 .logo:hover,
@@ -215,7 +215,7 @@ ul {
   cursor: pointer;
 }
 
-.main__description {
+.first__section {
   display: flex;
   gap: 30px;
   padding: 0;
@@ -223,7 +223,18 @@ ul {
   list-style: none;
 }
 
-.main__description--icons {
+.first__section--list{
+  flex-basis: calc((100% - 30px) / 4);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.first__section--list > h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.first__section--icons {
   all: unset;
   display: flex;
   justify-content: center;
@@ -231,19 +242,7 @@ ul {
   padding: 25px 100px;
   margin-bottom: 30px;
 }
-
-.main__description--list{
-  flex-basis: calc((100% - 30px) / 4);
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-.main__description--list > h3 {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.main__description--text {
+.first__section--text {
   text-transform: none;
   width: 270px;
   font-size: 14px;
@@ -253,7 +252,7 @@ ul {
 }
 /* ======== What do we do? ================== */
 
-.secondary-title {
+.secondary__section {
   display: flex;
   font-size: 36px;
   line-height: 1.16;
@@ -262,7 +261,7 @@ ul {
   margin-bottom: 50px;
 }
 
-.container-description {
+.secondary__section--description {
   position: absolute;
   bottom: 0;
   margin: 0;
@@ -277,29 +276,29 @@ ul {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.container-image {
+.secondary__section--image {
   display: block;
 }
 
-.container-images {
+.secondary__section--list {
   position: relative;
   display: flex;
   gap: 30px;
   list-style: none;
   margin-bottom: 94px;
 }
-/* ================= Our team ssecion========== */
+/* ================= Our team section========== */
 
 .team__section h2.team__section--title {
   padding-top: 94px;
 }
-.third-title {
+.team__section--title {
   flex-basis: calc((100% - 30px) / 4);
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.third-title > h3 {
+.team__section--title > h3 {
   font-size: 14px;
   margin-bottom: 10px;
 }
@@ -310,12 +309,12 @@ ul {
   padding-bottom: 94px;
   margin-bottom: 94px;
 }
-.container-our-team {
+.team__section--card {
   display: flex;
   gap: 30px;
   list-style: none;
 }
-.our-team {
+.team__section--member {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -326,7 +325,7 @@ ul {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.position {
+.team__section--position {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -334,7 +333,7 @@ ul {
   text-align: center;
   padding-bottom: 30px;
 }
-.social-list {
+.social__list {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
@@ -342,7 +341,7 @@ ul {
   margin-bottom: 30px;
 }
 
-.social-list-link {
+.social__list--link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -354,24 +353,24 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon {
+.social__list--icon {
   display: flex;
   width: 20px;
   height: 20px;
   fill: var(--icon-color);
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
+.social__list--link:hover,
+.social__list--link:focus {
   background-color: var(--selection-color);
 }
 
-a.social-list-link:hover svg,
-a.social-list-link:focus svg {
+a.social__list--link:hover svg,
+a.social__list--link:focus svg {
   fill: var(--white-color);
 }
 
-.our-team-frame {
+.team__section--frame {
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
