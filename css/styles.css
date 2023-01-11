@@ -469,12 +469,12 @@ ul.footer__mail--tel {
   align-items: flex-start;
   padding-bottom: 20px;
 }
-.social-icons {
+.social__icons {
   display: flex;
   list-style: none;
   gap: 10px;
 }
-.social-icons-bg {
+.social__icons--bg {
   display: flex;
   background-color: rgba(255, 255, 255, 0.1);
   height: 44px;
@@ -486,14 +486,14 @@ ul.footer__mail--tel {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-icons-footer {
+.social__icons--footer {
   display: flex;
   fill: var(--white-color);
   width: 20px;
   height: 20px;
 }
-.social-icons-bg:hover,
-.social-icons-bg:focus {
+.social__icons--bg:hover,
+.social__icons--bg:focus {
   background-color: var(--selection-color);
 }
 
@@ -512,14 +512,14 @@ ul.footer__mail--tel {
   text-transform: uppercase;
 }
 
-.icon-forms {
+.submit__btn--icon {
   position: absolute;
   top: 13px;
   right: 28px;
   fill: var(--white-color);
 }
 
-.input-email {
+.signup__input--email {
   margin-top: 20px;
   margin-right: 11px;
   background-color: var(--secondary-bacground-color);
@@ -535,7 +535,7 @@ ul.footer__mail--tel {
   padding-left: 16px;
 }
 
-.submit-btn {
+.submit__btn {
   position: relative;
   padding: 8px 72px 8px 42px;
   
