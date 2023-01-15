@@ -93,7 +93,7 @@ ul {
   padding-block: 32px;
   gap: 2rem;
 }
-.nav__contact {
+.nav__point {
   letter-spacing: 0.02em;
   color: var(--font-color);
   text-decoration: none;
@@ -129,7 +129,7 @@ ul {
   left: 0;
 }
 
-.icon__mail {
+.contact__icon {
   fill: var(--secondary-font-color);
   text-decoration: none;
 }
@@ -139,11 +139,10 @@ ul {
   list-style: none;
   display: flex;
   font-size: 14px;
-  gap: 2rem;
-}
+  gap: 2rem;}
 
-.nav__contact--tel,
-.nav__contact--mail {
+  .contact__mail,
+  .contact__tel{
   display: flex;
   text-decoration: none;
   color: var(--secondary-font-color);
@@ -154,16 +153,17 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav__contact--tel:hover,
-.nav__contact--mail:hover,
-.nav__contact--mail:focus,
-.nav__contact--tel:focus {
+.contact__mail:hover,
+.contact__tel:hover,
+.contact__mail:focus,
+.contact__tel:focus  {
   color: var(--selection-color);
 }
-.nav__contact--tel:hover svg,
-.nav__contact--mail:hover svg,
-.nav__contact--mail:focus svg,
-.nav__contact--tel:focus svg {
+
+.contact__mail:focus svg,
+.contact__mail:hover svg,
+.contact__tel:focus svg,
+.contact__tel:hover svg  {
   fill: var(--selection-color);
 }
 .main__background {
@@ -215,7 +215,7 @@ ul {
   cursor: pointer;
 }
 
-.first__section {
+.first-section {
   display: flex;
   gap: 30px;
   padding: 0;
@@ -223,18 +223,18 @@ ul {
   list-style: none;
 }
 
-.first__section--list{
+.first-section__list{
   flex-basis: calc((100% - 30px) / 4);
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.first__section--list > h3 {
+.first-section__list > h3 {
   font-size: 14px;
   margin-bottom: 10px;
 }
 
-.first__section--icons {
+.first-section__icons {
   all: unset;
   display: flex;
   justify-content: center;
@@ -242,7 +242,7 @@ ul {
   padding: 25px 100px;
   margin-bottom: 30px;
 }
-.first__section--text {
+.first-section__text {
   text-transform: none;
   width: 270px;
   font-size: 14px;
