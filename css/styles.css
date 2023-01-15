@@ -453,12 +453,12 @@ a.footer-mail__tel {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer__mail--tel:hover,
-.footer__mail--tel:focus {
+.footer-mail__tel:hover,
+.footer-mail__tel:focus {
   color: var(--selection-color);
 }
 
-ul.footer__mail--tel {
+ul.footer-mail__tel {
   list-style-type: none;
 }
 .join__us > h3 {
@@ -469,12 +469,12 @@ ul.footer__mail--tel {
   align-items: flex-start;
   padding-bottom: 20px;
 }
-.social__icons {
+.social-icons {
   display: flex;
   list-style: none;
   gap: 10px;
 }
-.social__icons--bg {
+.social-icons__bg {
   display: flex;
   background-color: rgba(255, 255, 255, 0.1);
   height: 44px;
@@ -486,14 +486,14 @@ ul.footer__mail--tel {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social__icons--footer {
+.social-icons__footer {
   display: flex;
   fill: var(--white-color);
   width: 20px;
   height: 20px;
 }
-.social__icons--bg:hover,
-.social__icons--bg:focus {
+.social-icons__bg:hover,
+.social-icons__bg:focus {
   background-color: var(--selection-color);
 }
 
