@@ -903,6 +903,7 @@ img {
 .checkbox__link{
   color: var(--selection-color);
   text-decoration: underline;
+  padding-inline: 3px;
 }
 
 .modal__submit-btn {
@@ -923,8 +924,20 @@ img {
   border: var(--selection-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+
+  transition-property: background-color, border-color, tranform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
+
+.submit-modal-btn:focus,
+.submit-modal-btn:hover{
+  background-color: darkblue; 
+  border-color: darkblue;
+  transform: scale(1.10);
+}
 /* 
   .box{
     background-color: orange;
