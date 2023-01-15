@@ -512,14 +512,14 @@ ul.footer-mail__tel {
   text-transform: uppercase;
 }
 
-.submit__btn--icon {
+.submit-btn__icon {
   position: absolute;
   top: 13px;
   right: 28px;
   fill: var(--white-color);
 }
 
-.signup__input--email {
+.signup__input {
   margin-top: 20px;
   margin-right: 11px;
   background-color: var(--secondary-bacground-color);
@@ -535,7 +535,7 @@ ul.footer-mail__tel {
   padding-left: 16px;
 }
 
-.submit__btn {
+.submit-btn {
   position: relative;
   padding: 8px 72px 8px 42px;
   
@@ -614,24 +614,24 @@ img {
   display: block;
 }
 
-.portfolio__card--item {
+.portfolio-card__item {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
 }
-.portfolio__card--title {
+.portfolio-card__title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   text-transform: none;
   margin-bottom: 4px;
 }
-.portfolio__card--type {
+.portfolio-card__type {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--secondary-bacground-color);
 }
-.portfolio__card {
+.portfolio-card {
   background: var(--white-color);
   flex-basis: calc((100% - 60px) / 3);
   overflow: hidden;
@@ -639,8 +639,8 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio__card:hover,
-.portfolio__card:focus {
+.portfolio-card:hover,
+.portfolio-card:focus {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -673,8 +673,8 @@ img {
   padding: 49px 45px 49px 24px;
 }
 
-.portfolio__card:hover .overlay,
-.portfolio__card:focus .overlay {
+.portfolio-card:hover .overlay,
+.portfolio-card:focus .overlay {
   transform: translateY(0);
 }
 
