@@ -252,7 +252,7 @@ ul {
 }
 /* ======== What do we do? ================== */
 
-.second__heading {
+.second-heading {
   display: flex;
   font-size: 36px;
   line-height: 1.16;
@@ -261,7 +261,7 @@ ul {
   margin-bottom: 50px;
 }
 
-.secondary__section--description {
+.second-section__description {
   position: absolute;
   bottom: 0;
   margin: 0;
@@ -276,11 +276,11 @@ ul {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.secondary__section--image {
+.second-section__image {
   display: block;
 }
 
-.secondary__section--list {
+.second-section__list {
   position: relative;
   display: flex;
   gap: 30px;
@@ -289,32 +289,32 @@ ul {
 }
 /* ================= Our team section========== */
 
-.team__section h2.team__section--title {
+.team-section h2.team-section__title {
   padding-top: 94px;
 }
-.team__section--title {
+.team-section__title {
   flex-basis: calc((100% - 30px) / 4);
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.team__section--title > h3 {
+.team-section__title > h3 {
   font-size: 14px;
   margin-bottom: 10px;
 }
 
-.team__section {
+.team-section {
   background-color: var(--third-bacground-color);
   width: 100%;
   padding-bottom: 94px;
   margin-bottom: 94px;
 }
-.team__section--card {
+.team-section__card {
   display: flex;
   gap: 30px;
   list-style: none;
 }
-.team__section--member {
+.team-section__member {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -325,7 +325,7 @@ ul {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.team__section--position {
+.team-section__position {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -333,7 +333,7 @@ ul {
   text-align: center;
   padding-bottom: 30px;
 }
-.social__list {
+.social-list {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
@@ -341,7 +341,7 @@ ul {
   margin-bottom: 30px;
 }
 
-.social__list--link {
+.social-list__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -353,41 +353,41 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social__list--icon {
+.social-list__icon {
   display: flex;
   width: 20px;
   height: 20px;
   fill: var(--icon-color);
 }
 
-.social__list--link:hover,
-.social__list--link:focus {
+.social-list__link:hover,
+.social-list__link:focus {
   background-color: var(--selection-color);
 }
 
-a.social__list--link:hover svg,
-a.social__list--link:focus svg {
+a.social-list__link:hover svg,
+a.social-list__link:focus svg {
   fill: var(--white-color);
 }
 
-.team__section--frame {
+.team-section__frame {
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.clients__section {
+.clients-section {
   background-color: var(--white-color);
   padding-bottom: 94px;
 }
-.clients__section--list {
+.clients-section__list {
   display: flex;
   list-style: none;
   justify-content: space-around;
 }
 
-.clients__section--icon {
+.clients-section__icon {
   display: flex;
   width: 170px;
   fill: var(--icon-color);
@@ -398,18 +398,18 @@ a.social__list--link:focus svg {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__section--icon:hover,
-.clients__section--icon:focus {
+.clients-section__icon:hover,
+.clients-section__icon:focus {
   border-color: var(--selection-color);
   cursor: pointer;
 }
 
-.clients__section--icon:hover svg,
-.clients__section--icon:focus svg {
+.clients-section__icon:hover svg,
+.clients-section__icon:focus svg {
   fill: var(--selection-color);
 }
 
-.client__icon--link {
+.client-icon__link {
   display: flex;
   fill: var(--icon-color);
   justify-content: center;
@@ -418,7 +418,7 @@ a.social__list--link:focus svg {
   height: 92px;
 }
 
-.client__icon--svg {
+.client-icon__svg {
   display: flex;
 }
 
@@ -445,7 +445,7 @@ address {
   padding-top: 20px;
 }
 
-a.footer__mail--tel {
+a.footer-mail__tel {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   text-decoration: none;
