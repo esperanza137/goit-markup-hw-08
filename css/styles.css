@@ -461,7 +461,7 @@ a.footer-mail__tel {
 ul.footer-mail__tel {
   list-style-type: none;
 }
-.join__us > h3 {
+.join-us > h3 {
   display: flex;
   font-size: 14px;
   line-height: 1.14;
@@ -760,7 +760,7 @@ img {
   border-color: var(--selection-color);
 }
 
-.modal__label--title {
+.label__title {
   padding-top: 12px;
   color: var(--secondary-font-color);
   font-weight: 400;
@@ -850,7 +850,7 @@ img {
   appearance: none;
 }
 
-.close__btn {
+.close-btn {
   position: absolute;
   display: flex;
   top: 8px;
@@ -905,7 +905,7 @@ img {
   text-decoration: underline;
 }
 
-.submit__modal--btn {
+.modal__submit-btn {
   background-color: var(--selection-color);
   width: 200px;
   padding: 10px 76px;
