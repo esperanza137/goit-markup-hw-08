@@ -1,10 +1,7 @@
-@import "./utils/variables.scss";
+@import "./utils/variables";
 @import "./utils/reset";
 @import "./utils/hidden";
 @import "./utils/backdrop";
-@import ".utils/banner.scss";
-
-
 
 @import "./components/header";
 @import "./components/banner";
@@ -13,10 +10,16 @@
 @import "./components/modal";
 @import "./components/skills";
 @import "./components/second-heading";
+@import "./components/skills";
+@import "./components/specialization";
+@import "./components/team-section";
+@import "./components/social-list";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/join_us";
+@import "./components/social-icon";
+@import "./components/newsletter";
+@import "./components/portfolio-buttons";
+@import "./components/portfolio-cards";
+@import "./components/overlay"
 
-
-
-
-@import "./components/header";
-@import "./components/header";
-@import "./components/header";
