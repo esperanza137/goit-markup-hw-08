@@ -1,0 +1,27 @@
+.social-icons {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+  }
+  .social-icons__bg {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .social-icons__footer {
+    display: flex;
+    fill: var(--white-color);
+    width: 20px;
+    height: 20px;
+  }
+  .social-icons__bg:hover,
+  .social-icons__bg:focus {
+    background-color: var(--selection-color);
+  }

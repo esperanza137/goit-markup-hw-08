@@ -1,0 +1,38 @@
+a.footer-mail__tel {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-mail__tel:hover,
+  .footer-mail__tel:focus {
+    color: var(--selection-color);
+  }
+  
+  ul.footer-mail__tel {
+    list-style-type: none;
+  }
+  .footer__background {
+    background-color: var(--secondary-bacground-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-inline: auto;
+  }
+  .footer__box {
+    display: flex;
+    align-items: baseline;
+  }
+  .logo__address {
+    margin-right: 70px;
+  }
+  address {
+    font-style: normal;
+    text-decoration-line: none;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+    padding-top: 20px;
+  }
