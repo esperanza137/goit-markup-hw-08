@@ -2,13 +2,13 @@
     background-color: var(--white-color);
     padding-bottom: 94px;
   }
-  .clients-section__list {
+.clients-section__list {
     display: flex;
     list-style: none;
     justify-content: space-around;
   }
   
-  .clients-section__icon {
+.clients-section__icon {
     display: flex;
     width: 170px;
     fill: var(--icon-color);
@@ -19,18 +19,18 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .clients-section__icon:hover,
-  .clients-section__icon:focus {
+.clients-section__icon:hover,
+.clients-section__icon:focus {
     border-color: var(--selection-color);
     cursor: pointer;
   }
   
-  .clients-section__icon:hover svg,
-  .clients-section__icon:focus svg {
+.clients-section__icon:hover svg,
+.clients-section__icon:focus svg {
     fill: var(--selection-color);
   }
   
-  .client-icon__link {
+.client-icon__link {
     display: flex;
     fill: var(--icon-color);
     justify-content: center;
@@ -39,7 +39,7 @@
     height: 92px;
   }
   
-  .client-icon__svg {
+.client-icon__svg {
     display: flex;
   }
   
