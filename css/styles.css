@@ -141,8 +141,8 @@ ul {
   font-size: 14px;
   gap: 2rem;}
 
-  .contact__mail,
-  .contact__tel{
+.contact__mail,
+.contact__tel{
   display: flex;
   text-decoration: none;
   color: var(--secondary-font-color);
