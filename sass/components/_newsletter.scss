@@ -50,10 +50,17 @@
     background-color: var(--selection-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-  
-    border-color: var(--selection-color);
     border: 1px solid var(--selection-color);
   
-    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color, border-color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+  }
+
+  .submit-btn:focus,
+  .submit-btn:hover {
+  background-color: darkblue; 
+  border-color: darkblue;
+  transform: scale(1.10);
   }
