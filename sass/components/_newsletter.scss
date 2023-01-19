@@ -13,12 +13,6 @@
     text-transform: uppercase;
   }
   
-  .submit-btn__icon {
-    position: absolute;
-    top: 13px;
-    right: 28px;
-    fill: var(--white-color);
-  }
   
   .signup__input {
     margin-top: 20px;
@@ -28,7 +22,7 @@
     height: 50px;
     font-size: 16px;
     color:  rgba(255, 255, 255, 0.6);
-  
+    
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -46,21 +40,28 @@
     line-height: 1.87;
     letter-spacing: 0.06em;
     cursor: pointer;
-  
+    
     background-color: var(--selection-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 1px solid var(--selection-color);
-  
+    
     transition-property: background-color, border-color, transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
   }
-
+  
+  .submit-btn__icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    fill: var(--white-color);
+  }
+  
   .submit-btn:focus,
   .submit-btn:hover {
-  background-color: darkblue; 
-  border-color: darkblue;
-  transform: scale(1.10);
+    background-color: darkblue; 
+    border-color: darkblue;
+    transform: scale(1.10);
   }

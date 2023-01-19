@@ -1,15 +1,15 @@
-@keyframes modalBox{
-  0%{
-    transform: scale(0.3);
-  }
-  100%{
-    transform: scale(1);
-  }
-  }
+// @keyframes modalBox{
+//   0%{
+//     transform: scale(0.3);
+//   }
+//   100%{
+//     transform: scale(1);
+//   }
+//   }
   
-  .modal[open] {
-    animation: modalBox 500 ms forwards;
-  }
+  // .modal[open] {
+  //   animation: modalBox 500 ms forwards;
+  // }
 
 .modal {
     position: relative;
@@ -23,10 +23,10 @@
     z-index: 10;
     background-color: var(--white-color);
     
-    animation-name: modalBox;
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // animation-name: modalBox;
+    // transition-property: transform;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     /* transform: translate(-50%, -50%) scale(1) ; */
   }
   
@@ -180,11 +180,11 @@
     letter-spacing: 0.03em;
   }
   
-  .checkbox__input:checked+ .checkbox__settings .icon__check--on{
+  .checkbox__input:checked + .checkbox__settings .icon__check--on{
     opacity: 1;
   }
   
-  .checkbox__input:checked+ .checkbox__settings .icon__check--off{
+  .checkbox__input:checked + .checkbox__settings .icon__check--off{
     opacity: 0;
   }
   
@@ -198,7 +198,7 @@
     padding-inline: 3px;
   }
   
-  .modal__submit-btn {
+  .modal__submit-button {
     background-color: var(--selection-color);
     width: 200px;
     padding: 10px 76px;
@@ -217,14 +217,14 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
   
-    transition-property: background-color, border-color, tranform;
+    transition-property: background-color, border-color, transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
   }
     
-  .submit-modal-btn:focus,
-  .submit-modal-btn:hover{
+  .modal__submit-button:focus,
+  .modal__submit-button:hover{
     background-color: darkblue; 
     border-color: darkblue;
     transform: scale(1.10);

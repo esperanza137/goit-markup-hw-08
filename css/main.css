@@ -43,29 +43,25 @@ ul {
           padding-inline-start: 0;
 }
 
-.is-hidden {
-  /* transform: translateX(-100%); */
-  pointer-events: none;
-  opacity: 0;
-  visibility: hidden;
-}
-
 .backdroop {
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* left: 0;
+  left: 0;
   right: 0;
   top: 0;
-  bottom: 0; */
-  inset: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .nav {
@@ -298,16 +294,6 @@ ul {
   padding: 40px;
   z-index: 10;
   background-color: var(--white-color);
-  -webkit-animation-name: modalBox;
-          animation-name: modalBox;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* transform: translate(-50%, -50%) scale(1) ; */
 }
 
@@ -461,7 +447,6 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  /* transform:  */
 }
 
 .checkbox__settings {
@@ -507,7 +492,7 @@ ul {
   padding-inline: 3px;
 }
 
-.modal__submit-btn {
+.modal__submit-button {
   background-color: var(--selection-color);
   width: 200px;
   padding: 10px 76px;
@@ -528,8 +513,10 @@ ul {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  -webkit-transition-property: background-color, border-color, tranform;
-  transition-property: background-color, border-color, tranform;
+  -webkit-transition-property: background-color, border-color, -webkit-transform;
+  transition-property: background-color, border-color, -webkit-transform;
+  transition-property: background-color, border-color, transform;
+  transition-property: background-color, border-color, transform, -webkit-transform;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -538,8 +525,8 @@ ul {
           transition-delay: 0;
 }
 
-.submit-modal-btn:focus,
-.submit-modal-btn:hover {
+.modal__submit-button:focus,
+.modal__submit-button:hover {
   background-color: darkblue;
   border-color: darkblue;
   -webkit-transform: scale(1.1);
@@ -678,7 +665,7 @@ ul {
   margin-bottom: 94px;
 }
 
-.team-section h2.team-section__title {
+.team-section h2 {
   padding-top: 94px;
 }
 
@@ -980,13 +967,6 @@ address {
   text-transform: uppercase;
 }
 
-.submit-btn__icon {
-  position: absolute;
-  top: 13px;
-  right: 28px;
-  fill: var(--white-color);
-}
-
 .signup__input {
   margin-top: 20px;
   margin-right: 11px;
@@ -1016,10 +996,32 @@ address {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border-color: var(--selection-color);
   border: 1px solid var(--selection-color);
-  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: background-color, border-color, -webkit-transform;
+  transition-property: background-color, border-color, -webkit-transform;
+  transition-property: background-color, border-color, transform;
+  transition-property: background-color, border-color, transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+
+.submit-btn__icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  fill: var(--white-color);
+}
+
+.submit-btn:focus,
+.submit-btn:hover {
+  background-color: darkblue;
+  border-color: darkblue;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .buttons {
