@@ -12,10 +12,14 @@
   }
 
 .modal {
-    position: relative;
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
     width: 528px;
-    min-height: 581px;
+    height: 581px;
     margin: auto;
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -164,6 +168,7 @@
   .checkbox__settings{
     display: flex;
     align-items: center;
+    margin-right: 7px;
   }
   
   .icon__check--on {
@@ -173,8 +178,8 @@
   }
   
   .checbox-title{
-    margin-left: 7px;
     display: flex;
+    margin-left: 7px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
