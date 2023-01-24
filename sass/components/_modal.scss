@@ -38,9 +38,9 @@
   margin-bottom: 10px;
 }
 
-.modal__label:focus-within,
-.modal__icon svg,
-.modal__label:hover svg {
+&:focus-within,
+&:hover svg,
+.modal__icon svg {
   fill: var(--selection-color);
   stroke: var(--selection-color);
   border-color: var(--selection-color);
@@ -84,10 +84,10 @@
   cursor: text;
 }
 
-.modal__inputs:focus svg,
-.modal__inputs:hover svg,
-.modal__inputs:focus,
-.modal__inputs:hover,
+&:focus svg,
+&:hover svg,
+&:focus,
+&:hover,
 .modal__textarea:hover,
 .modal__textarea:focus {
   border-color: var(--selection-color);
@@ -216,8 +216,8 @@
   transition-delay: 0;
 }
 
-.modal__submit-button:focus,
-.modal__submit-button:hover {
+&:focus,
+&:hover {
   background-color: darkblue;
   border-color: darkblue;
   transform: scale(1.1);

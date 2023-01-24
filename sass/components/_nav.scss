@@ -22,15 +22,14 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
+  .nav__point:hover,
+  .nav__point:focus {
+    color: var(--selection-color);
+  }
   .nav__section > ul {
     margin-left: 93px;
   }
-  
-  .nav__section:hover,
-  .nav__section:focus {
-    color: var(--selection-color);
-  }
-  
+    
   .agencja,
   .portfolio {
     position: relative;
@@ -70,16 +69,12 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .contact__mail:hover,
-  .contact__tel:hover,
-  .contact__mail:focus,
-  .contact__tel:focus  {
+  &:hover,
+  &:focus  {
     color: var(--selection-color);
   }
   
-  .contact__mail:focus svg,
-  .contact__mail:hover svg,
-  .contact__tel:focus svg,
-  .contact__tel:hover svg  {
+  &:focus svg,
+  &:hover svg{
     fill: var(--selection-color);
   }

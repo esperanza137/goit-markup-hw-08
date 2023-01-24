@@ -19,14 +19,14 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-.clients-section__icon:hover,
-.clients-section__icon:focus {
+&:hover,
+&:focus {
     border-color: var(--selection-color);
     cursor: pointer;
   }
   
-.clients-section__icon:hover svg,
-.clients-section__icon:focus svg {
+&:hover svg,
+&:focus svg {
     fill: var(--selection-color);
   }
   
