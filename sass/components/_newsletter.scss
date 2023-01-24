@@ -52,6 +52,12 @@
     transition-delay: 0;
   }
   
+  &:focus,
+  &:hover {
+    background-color: darkblue; 
+    border-color: darkblue;
+    transform: scale(1.10);
+  }
   .submit-btn__icon {
     position: absolute;
     top: 13px;
@@ -59,9 +65,3 @@
     fill: var(--white-color);
   }
   
-  .submit-btn:focus,
-  .submit-btn:hover {
-    background-color: darkblue; 
-    border-color: darkblue;
-    transform: scale(1.10);
-  }

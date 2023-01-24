@@ -17,6 +17,10 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+  &:hover,
+  &:focus {
+    background-color: var(--selection-color);
+  }
   
   .social-list__icon {
     display: flex;
@@ -25,10 +29,6 @@
     fill: var(--icon-color);
   }
   
-  .social-list__link:hover,
-  .social-list__link:focus {
-    background-color: var(--selection-color);
-  }
   
   a.social-list__link:hover svg,
   a.social-list__link:focus svg {

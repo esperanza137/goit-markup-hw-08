@@ -15,13 +15,13 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+   &:hover,
+   &:focus {
+    background-color: var(--selection-color);
+  }
   .social-icons__footer {
     display: flex;
     fill: var(--white-color);
     width: 20px;
     height: 20px;
-  }
-  .social-icons__bg:hover,
-  .social-icons__bg:focus {
-    background-color: var(--selection-color);
   }

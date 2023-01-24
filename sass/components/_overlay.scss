@@ -25,7 +25,7 @@
     padding: 49px 45px 49px 24px;
   }
   
-  .portfolio-card:hover .overlay,
-  .portfolio-card:focus .overlay {
+  &:hover .overlay,
+  &:focus .overlay {
     transform: translateY(0);
   }
