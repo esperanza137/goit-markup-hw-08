@@ -27,6 +27,14 @@
     color: var(--selection-color);
   }
 
+  .nav__section:hover,
+  .nav__section:focus {
+    color: var(--selection-color);
+  }
+  li.nav__section:hover,
+  li.nav__section:focus {
+    color: var(--selection-color);
+  }
   .nav__section > ul {
     margin-left: 93px;
   }
