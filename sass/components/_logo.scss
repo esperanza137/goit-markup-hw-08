@@ -3,6 +3,11 @@
     margin-right: 93px;
   }
   
+  &:hover,
+  &:focus,
+  &:visited {
+    text-decoration-color: var(--selection-color);
+  }
   .logo__all {
     font-family: "Raleway", sans-serif;
     width: 145px;
@@ -14,13 +19,7 @@
     letter-spacing: 0.03em;
   }
   
-  &:hover,
-  &:focus,
-  &:visited {
-    text-decoration-color: var(--selection-color);
-  }
-  
-  .logo__part {
+    .logo__part {
     color: var(--selection-color);
   }
   .logo__studio {
