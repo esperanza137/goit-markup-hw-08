@@ -10,9 +10,8 @@
     padding-block: 32px;
     padding-left: 93px;
     gap: 2rem;
-  }
-
-  a.nav__point {
+}
+.nav__point {
     letter-spacing: 0.02em;
     color: var(--font-color);
     text-decoration: none;
@@ -22,27 +21,22 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4,0,0.2,1);
-  }
-  
-  &:hover{
+}
+&:hover,
+&:focus  {
     color: var(--selection-color);
-  }
+}
 
-  .nav__point:hover >li,
-  .nav__point:focus >li {
-    color: var(--selection-color);
-  }
-
-  .nav__section > ul {
-    margin-left: 93px;
-  }
+.nav__section > ul {
+   margin-left: 93px;
+}
     
-  .agencja,
-  .portfolio {
+.agencja,
+.portfolio {
     position: relative;
-  }
-  .agencja::after,
-  .portfolio::after {
+}
+.agencja::after,
+.portfolio::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -50,22 +44,22 @@
     background-color: var(--selection-color);
     bottom: -32px;
     left: 0;
-  }
+}
   
-  .contact__icon {
+.contact__icon {
     fill: var(--secondary-font-color);
     text-decoration: none;
-  }
+}
   
-  .nav__contact {
+.nav__contact {
     color: var(--secondary-font-color);
     list-style: none;
     display: flex;
     font-size: 14px;
     gap: 2rem;}
   
-  .contact__mail,
-  .contact__tel{
+.contact__mail,
+.contact__tel{
     display: flex;
     text-decoration: none;
     color: var(--secondary-font-color);
@@ -74,14 +68,14 @@
     transition-property: color, stroke;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
   
-  &:hover,
-  &:focus  {
+&:hover,
+&:focus  {
     color: var(--selection-color);
-  }
+}
   
-  &:focus svg,
-  &:hover svg{
+&:focus svg,
+&:hover svg{
     fill: var(--selection-color);
-  }
+}
