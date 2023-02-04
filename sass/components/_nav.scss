@@ -11,7 +11,7 @@
     padding-left: 93px;
     gap: 2rem;
   }
-  
+
   a.nav__point {
     letter-spacing: 0.02em;
     color: var(--font-color);
@@ -24,8 +24,12 @@
     transition-timing-function: cubic-bezier(0.4,0,0.2,1);
   }
   
-  a.nav__point:hover,
-  a.nav__point:focus {
+  &:hover{
+    color: var(--selection-color);
+  }
+
+  .nav__point:hover >li,
+  .nav__point:focus >li {
     color: var(--selection-color);
   }
 

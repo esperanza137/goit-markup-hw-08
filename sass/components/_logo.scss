@@ -1,6 +1,6 @@
-.logo {
+.logo__link {
     text-decoration: none;
-    display: flex;
+    // display: flex;
     margin-right: 93px;
   }
   
@@ -19,8 +19,7 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
   }
-  
-    .logo__part {
+  .logo__part {
     color: var(--selection-color);
   }
   .logo__studio {
