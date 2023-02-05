@@ -180,6 +180,11 @@ ul {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.nav__point:hover,
+.nav__point:focus  {
+    color: var(--selection-color);
+}
+
 .nav__section > ul {
   margin-left: 93px;
 }
