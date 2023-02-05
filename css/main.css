@@ -258,7 +258,7 @@ ul {
   margin-right: 93px;
 }
 
-.logo__style {
+.logo__sign {
   font-family: "Raleway", sans-serif;
   width: 145px;
   height: 31px;
@@ -277,9 +277,9 @@ ul {
   color: var(--white-color);
 }
 
-.logo__style:hover,
-.logo__style:focus,
-.logo__style:visited {
+.logo__sign:hover,
+.logo__sign:focus,
+.logo__sign:visited {
   -webkit-text-decoration-color: var(--selection-color);
           text-decoration-color: var(--selection-color);
 }
