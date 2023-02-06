@@ -5,7 +5,7 @@
     "extensionName": ".css",
     "savePath": "/css",
     "savePathReplacementPairs": null
-  }
+  },
     {
       "extensionName": ".min.css",
       "format": "compressed",
