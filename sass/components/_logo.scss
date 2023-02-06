@@ -2,13 +2,13 @@
     text-decoration: none;
     // display: flex;
     margin-right: 93px;
-  }
-  
+    
   &:hover,
   &:focus,
   &:visited {
     text-decoration-color: var(--selection-color);
-  }
+  }}
+  
   .logo__sign {
     font-family: "Raleway", sans-serif;
     width: 145px;

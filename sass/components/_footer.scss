@@ -5,10 +5,10 @@ a.footer-mail__tel {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &:hover,
-  &:focus {
-    color: var(--selection-color);
+    &:hover,
+    &:focus {
+      color: var(--selection-color);
+    }
   }
   
   ul.footer-mail__tel {

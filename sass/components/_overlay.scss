@@ -23,9 +23,9 @@
     font-size: 18px;
     line-height: 1.55;
     padding: 49px 45px 49px 24px;
+    &:hover .overlay,
+    &:focus .overlay {
+      transform: translateY(0);
+    }
   }
   
-  &:hover .overlay,
-  &:focus .overlay {
-    transform: translateY(0);
-  }

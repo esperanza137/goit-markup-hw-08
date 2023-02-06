@@ -21,10 +21,9 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4,0,0.2,1);
-}
     &:hover,
-    &:focus  {
-    color: var(--selection-color);
+    &:focus 
+    {color: var(--selection-color);}
     }
 
 .nav__section > ul {
@@ -68,8 +67,7 @@
     transition-property: color, stroke;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-  
+
 &:hover,
 &:focus  {
     color: var(--selection-color);
@@ -78,4 +76,4 @@
 &:focus svg,
 &:hover svg{
     fill: var(--selection-color);
-}
+}}

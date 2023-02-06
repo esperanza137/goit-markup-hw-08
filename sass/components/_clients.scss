@@ -17,19 +17,17 @@
     transition-property: fill, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        border-color: var(--selection-color);
+        cursor: pointer;
+      };
+      &:hover svg,
+      &:focus svg {
+          fill: var(--selection-color);
+        }
   }
-  
-&:hover,
-&:focus {
-    border-color: var(--selection-color);
-    cursor: pointer;
-  }
-  
-&:hover svg,
-&:focus svg {
-    fill: var(--selection-color);
-  }
-  
+    
 .client-icon__link {
     display: flex;
     fill: var(--icon-color);
