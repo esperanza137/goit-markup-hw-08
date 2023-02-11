@@ -1,15 +1,10 @@
-.nav {
-    display: flex;
-    align-items: center;
-  }
-  
   .header {
     border-bottom: 1px solid #ececec;
+    &__bar {
+      display: flex;
+      margin-bottom: 0;
+      text-decoration-line: none;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
-  .header__bar {
-    display: flex;
-    margin-bottom: 0;
-    text-decoration-line: none;
-    align-items: center;
-    justify-content: space-between;
-  };

@@ -1,29 +1,24 @@
-.team-section h2 {
-    padding-top: 94px;
-  };
-.team-section__title {
+.team-section {
+  background-color: var(--third-bacground-color);
+  width: 100%;
+  padding-bottom: 94px;
+  margin-bottom: 94px;
+  &__title {
     flex-basis: calc((100% - 30px) / 4);
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    & > h3 {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
   }
-.team-section__title > h3 {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  
-  .team-section {
-    background-color: var(--third-bacground-color);
-    width: 100%;
-    padding-bottom: 94px;
-    margin-bottom: 94px;
-  }
-  .team-section__card {
+  &__card {
     display: flex;
     gap: 30px;
     list-style: none;
   }
-  .team-section__member {
+  &__member {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -34,7 +29,7 @@
     margin-top: 30px;
     margin-bottom: 10px;
   }
-  .team-section__position {
+  &__position {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -42,9 +37,13 @@
     text-align: center;
     padding-bottom: 30px;
   }
-  .team-section__frame {
+  &__frame {
     background: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
+  & h2 {
+    padding-top: 94px;
+  }
+}

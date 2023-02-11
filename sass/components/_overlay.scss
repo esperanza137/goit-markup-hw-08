@@ -1,31 +1,31 @@
 .box {
-    position: relative;
-    overflow: hidden;
-  }
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 101%;
-    background-color: var(--selection-color);
-  
-    will-change: transform;
-    transform: translateY(100%);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .overlay > p {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 101%;
+  background-color: var(--selection-color);
+
+  will-change: transform;
+  transform: translateY(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  & > p {
     font-family: "Roboto", sans-serif;
     color: var(--white-color);
     font-weight: 400;
     font-size: 18px;
     line-height: 1.55;
     padding: 49px 45px 49px 24px;
-    &:hover .overlay,
-    &:focus .overlay {
-      transform: translateY(0);
-    }
   }
-  
+}
+
+
+// .portfolio-card:hover .overlay,
+// .portfolio-card:focus .overlay {
+//   transform: translateY(0);
+// }

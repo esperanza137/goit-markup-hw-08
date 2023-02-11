@@ -1,9 +1,8 @@
 .social-icons {
-    display: flex;
-    list-style: none;
-    gap: 10px;
-  }
-  .social-icons__bg {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  &__bg {
     display: flex;
     background-color: rgba(255, 255, 255, 0.1);
     height: 44px;
@@ -16,12 +15,13 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-     background-color: var(--selection-color);
-   }
+      background-color: var(--selection-color);
+    }
   }
-  .social-icons__footer {
+  &__footer {
     display: flex;
     fill: var(--white-color);
     width: 20px;
     height: 20px;
   }
+}

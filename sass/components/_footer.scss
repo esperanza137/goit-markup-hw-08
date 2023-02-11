@@ -1,3 +1,15 @@
+.footer-background {
+  background-color: var(--secondary-bacground-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-inline: auto;
+
+  &__box {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 a.footer-mail__tel {
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
@@ -14,17 +26,7 @@ a.footer-mail__tel {
   ul.footer-mail__tel {
     list-style-type: none;
   }
-  .footer__background {
-    background-color: var(--secondary-bacground-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin-inline: auto;
-  }
-  .footer__box {
-    display: flex;
-    align-items: baseline;
-  }
-  .logo__address {
+  .logo-address {
     margin-right: 70px;
   }
   address {

@@ -1,4 +1,7 @@
-.nav__section {
+.nav {
+  display: flex;
+  align-items: center;
+  &__section {
     display: flex;
     justify-content: space-between;
     font-weight: 500;
@@ -10,32 +13,40 @@
     padding-block: 32px;
     padding-left: 93px;
     gap: 2rem;
-}
-.nav__point {
+    & > ul {
+      margin-left: 93px;
+    }
+  }
+
+  &__point {
     letter-spacing: 0.02em;
     color: var(--font-color);
     text-decoration: none;
     list-style-type: none;
-    display: flex; 
+    display: flex;
     justify-content: space-around;
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
-    &:focus 
-    {color: var(--selection-color);}
+    &:focus {
+      color: var(--selection-color);
     }
-
-.nav__section > ul {
-   margin-left: 93px;
+  }
+  &__contact {
+    color: var(--secondary-font-color);
+    list-style: none;
+    display: flex;
+    font-size: 14px;
+    gap: 2rem;
+  }
 }
-    
+
 .agencja,
 .portfolio {
-    position: relative;
-}
-.agencja::after,
-.portfolio::after {
+  position: relative;
+  &::after,
+  &::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -43,37 +54,32 @@
     background-color: var(--selection-color);
     bottom: -32px;
     left: 0;
+  }
 }
-  
-.contact__icon {
-    fill: var(--secondary-font-color);
-    text-decoration: none;
-}
-  
-.nav__contact {
-    color: var(--secondary-font-color);
-    list-style: none;
-    display: flex;
-    font-size: 14px;
-    gap: 2rem;}
-  
-.contact__mail,
-.contact__tel{
-    display: flex;
-    text-decoration: none;
-    color: var(--secondary-font-color);
-    gap: 1rem;
-    align-items: center;
-    transition-property: color, stroke;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-&:hover,
-&:focus  {
-    color: var(--selection-color);
+.contact-icon {
+  fill: var(--secondary-font-color);
+  text-decoration: none;
 }
-  
-&:focus svg,
-&:hover svg{
+
+.contact-mail,
+.contact-tel {
+  display: flex;
+  text-decoration: none;
+  color: var(--secondary-font-color);
+  gap: 1rem;
+  align-items: center;
+  transition-property: color, stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--selection-color);
+  }
+
+  &:focus svg,
+  &:hover svg {
     fill: var(--selection-color);
-}}
+  }
+}

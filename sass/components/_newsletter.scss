@@ -5,7 +5,7 @@
     margin-left: 78px;
   }
   
-  .signup__title {
+  .signup-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14px;
@@ -14,7 +14,7 @@
   }
   
   
-  .signup__input {
+  .signup-input {
     margin-top: 20px;
     margin-right: 11px;
     background-color: var(--secondary-bacground-color);
@@ -56,12 +56,12 @@
       border-color: darkblue;
       transform: scale(1.10);
     }
-  }
+    &__icon {
+          position: absolute;
+          top: 13px;
+          right: 28px;
+          fill: var(--white-color);
+        }
+      }
   
-  .submit-btn__icon {
-    position: absolute;
-    top: 13px;
-    right: 28px;
-    fill: var(--white-color);
-  }
   
