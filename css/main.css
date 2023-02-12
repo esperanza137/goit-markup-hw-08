@@ -58,6 +58,12 @@ ul {
   visibility: hidden;
 }
 
+body {
+  font-family: Roboto;
+  color: var(--font-color);
+  font-weight: 500;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }

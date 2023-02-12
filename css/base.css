@@ -1,1 +1,8 @@
-/*# sourceMappingURL=base.css.map */
+body {
+  font-family: Roboto;
+  color: var(--font-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  background-color: var(--white-color);
+}/*# sourceMappingURL=base.css.map */
