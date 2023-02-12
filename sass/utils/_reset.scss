@@ -12,8 +12,18 @@
     width: 100%;
     max-width: 1200px;
     padding: 0 15px;
-  }
-  
+
+    @media (min-width: var(--mobile-breakpoint)) {
+     width: 448px;
+      }
+    @media (min-width: var(--tablet-breakpoint) ) {
+     width: 720px;
+      }
+    @media (min-width: var(--desktop-breakpoint)) {
+     width: 1200px;
+      }
+    }
+    
   h1,
   h2,
   h3,
@@ -24,4 +34,7 @@
   ul {
     -webkit-padding-start: 0;
             padding-inline-start: 0;
+  }
+  .list {
+    list-style: none;
   }

@@ -40,6 +40,11 @@
     font-size: 14px;
     gap: 2rem;
   }
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
 }
 
 .agencja,
