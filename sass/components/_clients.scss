@@ -4,27 +4,44 @@
   &__list {
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 50px;
+    flex-wrap: wrap;
   }
   &__box {
     display: flex;
-    width: 170px;
+    width: 100%;
+    max-width: 210px;
     fill: var(--icon-color);
     border: 1px solid var(--icon-color);
     border-radius: 4px;
+    cursor: pointer;
     transition-property: fill, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      border-color: var(--selection-color);
-      cursor: pointer;
-    }
-    &:hover svg,
-    &:focus svg {
-      fill: var(--selection-color);
-    }
+    
+    @include tablet {
+      width: 226px;
+      height: 92px;
   }
+
+    @include desktop {
+      width: 170px;
+      height: 92px;
+  }
+  &:hover,
+  &:focus {
+    border-color: var(--selection-color);
+    outline: var(--selection-color);
+    cursor: pointer;
+  }
+  &:hover svg,
+  &:focus svg {
+    fill: var(--selection-color);
+  }
+}
+     
   &__link {
     display: flex;
     fill: var(--icon-color);
@@ -35,6 +52,6 @@
   }
     &__svg {
     display: flex;
-  }
+    }
 }
-
+    

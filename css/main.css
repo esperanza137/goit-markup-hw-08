@@ -610,6 +610,39 @@ body {
   margin-bottom: 50px;
 }
 
+.skills {
+  background-color: var(--third-background-color);
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .skills {
+    padding-bottom: 45px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skills {
+    padding-bottom: 0;
+  }
+}
+.skills-section__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .skills-section__list {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skills-section__list {
+    width: 270px;
+  }
+}
 .skills-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -651,40 +684,57 @@ body {
   color: var(--secondary-font-color);
 }
 
-.specialization-description {
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  color: var(--white-color);
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  line-height: 1.14;
-  text-transform: uppercase;
-  height: 70px;
-  width: 370px;
-  padding: 27px 88px;
-  background-color: rgba(47, 48, 58, 0.8);
+.specialization {
+  display: none;
 }
-
-.specialization-image {
-  display: block;
+@media screen and (min-width: 1200px) {
+  .specialization {
+    display: block;
+  }
+  .specialization__list {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-bottom: 94px;
+  }
+  .specialization__description {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    color: var(--white-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.14;
+    text-transform: uppercase;
+    height: 70px;
+    width: 370px;
+    padding: 27px 88px;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  .specialization__image {
+    display: block;
+  }
+  .specialization .second-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
 }
-
-.specialization-list {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  list-style: none;
-  margin-bottom: 94px;
-}
-
 .team-section {
   background-color: var(--third-bacground-color);
+  text-align: center;
   width: 100%;
   padding-bottom: 94px;
-  margin-bottom: 94px;
 }
 .team-section__title {
   -ms-flex-preferred-size: calc((100% - 30px) / 4);
@@ -703,6 +753,11 @@ body {
   display: flex;
   gap: 30px;
   list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .team-section__member {
   font-style: normal;
@@ -728,6 +783,10 @@ body {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-section__frame img {
+  display: block;
+  width: 100%;
 }
 .team-section h2 {
   padding-top: 94px;
@@ -788,17 +847,24 @@ body {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  padding-top: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .clients-section__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
+  width: 100%;
+  max-width: 210px;
   fill: var(--icon-color);
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  cursor: pointer;
   -webkit-transition-property: fill, border-color;
   transition-property: fill, border-color;
   -webkit-transition-duration: 250ms;
@@ -806,8 +872,21 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .clients-section__box {
+    width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-section__box {
+    width: 170px;
+    height: 92px;
+  }
+}
 .clients-section__box:hover, .clients-section__box:focus {
   border-color: var(--selection-color);
+  outline: var(--selection-color);
   cursor: pointer;
 }
 .clients-section__box:hover svg, .clients-section__box:focus svg {

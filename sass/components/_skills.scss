@@ -1,35 +1,58 @@
-.skills-section {
-  display: flex;
-  gap: 30px;
-  padding: 0;
-  margin-bottom: 94px;
-  list-style: none;
+.skills {
+  background-color: var(--third-background-color);
+  padding-bottom: 60px;
 
-  &__list {
-    flex-basis: calc((100% - 30px) / 4);
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    & > h3 {
-     font-size: 14px;
-     margin-bottom: 10px;
+  @include tablet {
+    padding-bottom: 45px;
+  }
+  @include desktop {
+    padding-bottom: 0;
+  }
+
+  &-section__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 450px;
+
+    @include tablet {
+        width: 354px;
+    }
+    @include desktop {
+        width: 270px;
     }
   }
-  &__icons {
-    all: unset;
+  &-section {
     display: flex;
-    justify-content: center;
-    background-color: var(--third-bacground-color);
-    padding: 25px 100px;
-    margin-bottom: 30px;
-  }
-  &__text {
-    text-transform: none;
-    width: 270px;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--secondary-font-color);
+    gap: 30px;
+    padding: 0;
+    margin-bottom: 94px;
+    list-style: none;
+      &__list {
+      flex-basis: calc((100% - 30px) / 4);
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      & > h3 {
+       font-size: 14px;
+       margin-bottom: 10px;
+      }
+    }
+    &__icons {
+      all: unset;
+      display: flex;
+      justify-content: center;
+      background-color: var(--third-bacground-color);
+      padding: 25px 100px;
+      margin-bottom: 30px;
+    }
+    &__text {
+      text-transform: none;
+      width: 270px;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: var(--secondary-font-color);
+     }
   }
 }
-
